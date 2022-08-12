@@ -1,0 +1,63 @@
+<head>
+    <title>โปรแกรมวัดค่าดัชนีมวลกาย</title>
+    <link href="style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="container2">
+            <h1 class="title">โปรแกรมวัดค่าดัชนีมวลกาย</h1>
+            <input id="name" type="text" placeholder="กรอกชื่อ">
+            <input id="height" type="number" placeholder="กรอกส่วนสูง">
+            <input id="weight" type="number" placeholder="กรอกน้ำหนัก"><br><br>
+
+            <div class="container3">
+                <button class="bt1" onclick="display()">คำนวณ</button>
+                <h3 id="resultBMI">กดปุ่มเพื่อคำนวณค่าดัชนีมวลกายของคุณ</h3>
+                <h3 id="resultBMI2"></h3>
+            </div>
+
+        </div>
+
+
+        <br><br><br>
+        <table style="width:500px">
+            <tr>
+                <td><b>ค่าดัชนีมวลกาย ΒΜΙ</b></td>
+                <td><b>อยู่ในเกณฑ์</b></td>
+                <td><b>ภาวะเสี่ยง</b></td>
+            </tr>
+            <tr>
+                <td>น้อยกว่า 18.50</td>
+                <td>น้ำหนักน้อย (ผอม)</td>
+                <td>มากกว่าคนปกติ</td>
+            </tr>
+            <tr>
+                <td>ระหว่าง 18.50 - 22.90</td>
+                <td>ปกติ (สุขภาพดี)</td>
+                <td>ปกติ</td>
+            </tr>
+            <tr>
+                <td>ระหว่าง 23 - 24.90</td>
+                <td>ท้วม (โรคอ้วนระดับ 1)</td>
+                <td>อันตรายระดับที่ 1</td>
+            </tr>
+            <tr>
+                <td>ระหว่าง 25 - 29.90</td>
+                <td>อ้วน (โรคอ้วนระดับ 2)</td>
+                <td>อันตรายระดับที่ 2</td>
+            </tr>
+            <tr>
+                <td>มากกว่า 30</td>
+                <td>อ้วนมาก (โรคอ้วนระดับ 3)</td>
+                <td>อันตรายระดับที่ 3</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="bmi.js"></script>
+</body>
