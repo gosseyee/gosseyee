@@ -10,31 +10,68 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <div class="navbar">
-        <a class="logo" href="index.html">TEST</a>
-        <a class="bar" href="#">menu</a>
-        <a class="bar" href="#">contract</a>
+
+
+    <div class="main">
+        <div class="menu-grid">
+            <h2>Calculator Test</h2>
+            <input id='form' class="form" type='text' placeholder="0"><br><br>
+            <button class="sev" onclick="buttonNumber(this.value)" value="7">7</button>
+            <button class="eig" onclick="buttonNumber(this.value)" value="8">8</button>
+            <button class="nin" onclick="buttonNumber(this.value)" value="9">9</button>
+            <button class="plus" onclick="buttonNumber(this.value)" value="+">+</button><br>
+            <button class="fou" onclick="buttonNumber(this.value)" value="4">4</button>
+            <button class="fiv" onclick="buttonNumber(this.value)" value="5">5</button>
+            <button class="six" onclick="buttonNumber(this.value)" value="6">6</button>
+            <button class="minus" onclick="buttonNumber(this.value)" value="-">-</button><br>
+            <button class="one" onclick="buttonNumber(this.value)" value="1">1</button>
+            <button class="two" onclick="buttonNumber(this.value)" value="2">2</button>
+            <button class="thr" onclick="buttonNumber(this.value)" value="3">3</button>
+            <button class="kun" onclick="buttonNumber(this.value)" value="*">*</button><br>
+            <button class="del" onclick="Dclear()">D</button>
+            <button class="zer" onclick="buttonNumber(this.value)" value="0">0</button>
+            <button class="cal" onclick="nCal()">=</button>
+            <button class="han" onclick="buttonNumber(this.value)" value="/">/</button><br>
+
+
+
+        </div>
     </div>
-    <!-- END NAVBAR -->
-
-    <!-- Body -->
-    <div id="container1" class="container1">
 
 
-    </div>
-    
-    <button class="btn1" onclick="Display()">click to cal</button>
-    <button class="btn2" onclick="Dclear()">click to clear</button>
-    
-    <!-- END Body -->
-
-    <div id="result" class="result" style="text-align: center;">
-        <h1>ผลรวม</h1>
-    </div>
 
 
-    <script src="app.js"></script>
+
+    <script>
+        function nCal(){
+
+           const inputnum = document.querySelector('form').value
+           
+           document.getElementById("form").value = sum;
+        }
+
+        function buttonNumber(input) {
+            document.getElementById("form").value += input;
+        }
+
+        function Dclear() {
+            document.getElementById("form").value = " ";
+        }
+
+    </script>
+
+ 
+
+
+
+
+   
+
+
+
+
+
+
 </body>
 
 </html>
