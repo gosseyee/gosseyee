@@ -1,77 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
-    <title>Document</title>
-</head>
+<html>
 
 <body>
 
 
-    <div class="main">
-        <div class="menu-grid">
-            <h2>Calculator Test</h2>
-            <input id='form' class="form" type='text' placeholder="0"><br><br>
-            <button class="sev" onclick="buttonNumber(this.value)" value="7">7</button>
-            <button class="eig" onclick="buttonNumber(this.value)" value="8">8</button>
-            <button class="nin" onclick="buttonNumber(this.value)" value="9">9</button>
-            <button class="plus" onclick="buttonNumber(this.value)" value="+">+</button><br>
-            <button class="fou" onclick="buttonNumber(this.value)" value="4">4</button>
-            <button class="fiv" onclick="buttonNumber(this.value)" value="5">5</button>
-            <button class="six" onclick="buttonNumber(this.value)" value="6">6</button>
-            <button class="minus" onclick="buttonNumber(this.value)" value="-">-</button><br>
-            <button class="one" onclick="buttonNumber(this.value)" value="1">1</button>
-            <button class="two" onclick="buttonNumber(this.value)" value="2">2</button>
-            <button class="thr" onclick="buttonNumber(this.value)" value="3">3</button>
-            <button class="kun" onclick="buttonNumber(this.value)" value="*">*</button><br>
-            <button class="del" onclick="Dclear()">D</button>
-            <button class="zer" onclick="buttonNumber(this.value)" value="0">0</button>
-            <button class="cal" onclick="nCal()">=</button>
-            <button class="han" onclick="buttonNumber(this.value)" value="/">/</button><br>
 
 
 
-        </div>
-    </div>
+
+
 
 
 
 
 
     <script>
-        function nCal(){
 
-           const inputnum = document.querySelector('form').value
-           
-           document.getElementById("form").value = sum;
+        var x = prompt("กรอกเลข 0 and 10:", "")
+
+        // try เอา x ไปเช็คและโยน error ออกมา  catch()คือจับ error แล้วเอามาเทียบ er  try catch
+        try {
+            if (x > 10)
+                throw "Err1"
+            else if (x < 0)
+                throw "Err2"
+        }
+        catch (er) {
+            if (er == "Err1")
+                alert("Error! ตัวเลขมีค่าสูงเกินไป")
+            if (er == "Err2")
+                alert("Error! ตัวเลขมีค่าต่ำเกินไป")
         }
 
-        function buttonNumber(input) {
-            document.getElementById("form").value += input;
-        }
 
-        function Dclear() {
-            document.getElementById("form").value = " ";
-        }
 
     </script>
-
- 
-
-
-
-
-   
-
-
-
-
-
-
 </body>
 
 </html>
