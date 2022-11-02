@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>TEST</h1>
+    <div class="user-list">
+
+    </div>
+
+    <script>
+
+        const person = [{
+            name: "Marcus",
+            lastname: "Rashford",
+            position: "stiker",
+            age: 26,
+            social: ["FB : MarcusRash", "IG : MarcusR", "YT : Marcus"]
+        },
+        {
+            name: "Romelo",
+            lastname: "lakaka",
+            position: "stiker",
+            age: 28,
+            social: ["FB : lakaka9", "IG : lakaka9"]
+        },
+        {
+            name: "Leo",
+            lastname: "mesi",
+            position: "stiker",
+            age: 34,
+            social: ["FB : LeoMesi", "IG : LM10", "YT : LEO10"]
+        },
+        {
+            name: "Erling",
+            lastname: "Haalal",
+            position: "stiker",
+            age: 19,
+            social: ["FB : Haalal", "IG : Haalal", "YT : KingFlowz"]
+        }
+        ]
+
+        const MResult = document.querySelector('.user-list')
+
+        person.forEach((keys) => {
+
+            let Useritem = document.createElement('div')
+            Useritem.classList.add('user-item')
+
+            const Fullname = document.createElement('h3')
+            Fullname.classList.add('fullname')
+            Fullname.innerHTML = keys.name + ' ' + keys.lastname+' '+keys.age+' '+keys.position
+
+            console.log(keys.name)
+            console.log(keys.lastname)
+            console.log(keys.age)
+            console.log(keys.position)
+             
+            Useritem.append(Fullname)
+            MResult.append(Useritem)
+
+
+        });
+
+
+        let x = document.createElement('div')
+        x.classList.add('xxx')
+
+        let ii = document.createElement('p')
+        ii.classList.add('iii')
+        ii.innerHTML = "Hello";
+
+        x.append(ii)
+        MResult.append(x)
+        
+
+        
+       
+
+
+
+    </script>
+</body>
+
+</html>
