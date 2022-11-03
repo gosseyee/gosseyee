@@ -1,0 +1,70 @@
+body{
+    background-color: rgba(90, 78, 78, 0.61);
+    
+}
+
+
+.navbar{
+    padding: 10px;
+    /* border: 1px solid red; */
+    height: 60px;
+    
+}
+
+.navbar a{
+    justify-content: space-between;
+    text-decoration: none;
+    margin-right: 30px;
+   
+}
+
+.logo{
+    text-shadow: 1px 1px 2px rgb(53, 51, 172), 0 0 1em rgb(86, 212, 216), 0 0 0.2em rgb(0, 0, 0);
+    font-size: 27px;
+    margin: auto;
+    margin-left: 40px;
+    font-weight: bold;
+    color: aqua;
+    font-style: italic ;
+}
+
+.bar{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+}
+
+.container1{
+    padding: 4px;
+}
+
+.Content1{
+    text-shadow: 1px 1px 2px rgb(4, 4, 56), 0 0 1em blue, 0 0 0.2em darkblue;
+    padding: 50px;
+    /* border: 1px solid red; */
+    text-align: center;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+
+.btn1{
+    margin-top: 10px;
+    padding: 4px;
+    background-color: rgb(31, 31, 110);
+    color: rgb(0, 247, 255);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+    
+   }
+.btn2{
+    margin-top: 10px;
+    padding: 4px;
+    background-color: rgb(31, 31, 110);
+    color: rgb(0, 247, 255);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    
+   }

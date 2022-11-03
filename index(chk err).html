@@ -1,0 +1,39 @@
+<html>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        var x = prompt("กรอกเลข 0 and 10:", "")
+
+        // try เอา x ไปเช็คและโยน error ออกมา  catch()คือจับ error แล้วเอามาเทียบ er  try catch
+        try {
+            if (x > 10)
+                throw "Err1"
+            else if (x < 0)
+                throw "Err2"
+        }
+        catch (er) {
+            if (er == "Err1")
+                alert("Error! ตัวเลขมีค่าสูงเกินไป")
+            if (er == "Err2")
+                alert("Error! ตัวเลขมีค่าต่ำเกินไป")
+        }
+
+
+
+    </script>
+</body>
+
+</html>
