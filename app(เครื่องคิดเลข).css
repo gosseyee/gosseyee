@@ -1,26 +1,46 @@
-.main{
-    
+body{
+    background-color: rgb(132, 137, 137);
+}
+
+.main {
+    border: 1px solid rgb(255, 0, 174);
     text-align: center;
-    padding: 10px;
+   
 }
 
-.menu-grid{
-    margin: 0 auto;
-    border:1px solid rgb(176, 5, 5);
-    padding: 30px;
+.menu-grid {
     
+   
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    row-gap: 5px;
+    column-gap: 5px;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;;
+    border: 1px solid rgb(176, 5, 5);
+    margin-left: 550px;
+    margin-right: 550px;
 }
 
-button{
+.cal-btn {
+    
+    
+    border: 1px solid rgb(19, 60, 126);
     color: rgb(0, 0, 0);
+    font-weight: bold;
     padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    background-color: rgba(219, 219, 219, 0.849);
 }
 
-.form{
+
+.cal-btn:hover {
+    background-color: rgb(110, 194, 224);
+
+}
+
+.form-ip {
     font-weight: bold;
     color: rgb(0, 0, 0);
     font-size: 25px;
